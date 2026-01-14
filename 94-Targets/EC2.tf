@@ -1,5 +1,5 @@
 resource "aws_instance" "terraform" {
-  ami                    = "ami-09c813fb71547fc4f"
+  ami                    = "ami-0220d79f3f480ecf5"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.lifecycle.id]
   tags = {
@@ -10,7 +10,7 @@ resource "aws_instance" "terraform" {
 }
 
 resource "aws_instance" "another" {
-    ami = "ami-09c813fb71547fc4f"
+    ami = "ami-0220d79f3f480ecf5"
     instance_type = "t2.micro"
     tags = {
         Name = "another"
@@ -22,7 +22,7 @@ resource "aws_instance" "another" {
 }
 
 resource "aws_security_group" "lifecycle" {
-  name = "lifecycle---aaaa"
+  name = "lifecycle"
 
   egress {
     from_port   = 0 # from port 0 to to port 0 means all ports
