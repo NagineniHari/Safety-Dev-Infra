@@ -8,12 +8,12 @@ sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashi
 sudo yum -y install terraform
 
 # creating databases
-cd /home/ec2-user
-git clone https://github.com/naginenihari/Safety-Dev-Infra.git
-chown ec2-user:ec2-user -R Safety-Dev-Infra
-cd Safety-Dev-Infra/40-Databases
-terraform init
-terraform apply -auto-approve
+# cd /home/ec2-user
+# git clone https://github.com/naginenihari/Safety-Dev-Infra.git
+# chown ec2-user:ec2-user -R Safety-Dev-Infra
+# cd Safety-Dev-Infra/40-Databases
+# terraform init
+# terraform apply -auto-approve
 
 
 
